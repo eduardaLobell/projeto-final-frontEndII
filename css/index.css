@@ -1,0 +1,144 @@
+
+
+/* container-card = card 
+img-personagens
+titulo-card = h2
+status-personagem = p
+especie-personagem = p
+
+
+div contendo os cards = espaco-cards
+div contendo botoes = espaco-botoes
+div contendo infos = container-infos
+footer = footer
+div = titulo-pesquisa*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#titulo-pesquisa {
+    text-align: center;
+    color: rgb(27, 100, 34);
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+input {
+    width: 400px;
+    height: 35px;
+    border-radius: 8px;
+
+}
+
+#espaco-cards {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 1000px; 
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+.img-personagens {
+    height: 200px;
+}
+
+.container-card {
+    width: 500px;
+    display: flex;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+}
+
+.container-card-info{
+    padding-left: 15px;
+}
+
+#img {
+    height: 200px;
+}
+
+.titulo-card {
+    color: rgb(27, 100, 34);
+    font-size: 26px;
+}
+
+.dados-personagem {
+    font-size: 18px;
+}
+
+
+#container-image {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+#img {
+    height: 350px;
+}
+
+footer {
+    height: 200px;
+    background-color: rgb(27, 41, 29);
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+#container-infos {
+    margin-top: 15px;
+    color: rgb(77, 82, 76);
+    flex-direction: row;
+}
+
+#frase {
+    color: rgb(77, 82, 76);
+    margin-bottom: 8px;
+}
+
+#nome {
+    color: #ffff;
+}
+
+#espaco-botoes {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+.botoes-paginas{
+    border:1px solid #ffffff;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 10px;
+    text-decoration:none;
+    color: white; 
+    background-color:rgb(27, 100, 34);
+}
+
+.botoes-paginas:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.botoes-paginas:disabled {
+    color: rgb(27, 100, 34); 
+    background-color: rgb(230, 229, 229);
+    cursor: not-allowed; 
+}
